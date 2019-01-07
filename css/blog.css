@@ -1,0 +1,554 @@
+body a:hover {
+    text-decoration: none;
+}
+
+body a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+/* inner bg */
+
+.demo-sec {
+    padding: 3em 0;
+}
+
+.demo-bg {
+    background: url(../images/b2.jpg) no-repeat;
+    min-height: 425px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+
+h3.demo-title {
+    font-weight: 300;
+    margin-top: 6em;
+    padding-right: 1em;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 2em;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-shadow: 2px 0px 0px #000;
+    border-right: 4px double #e6e6e6;
+}
+
+h3.demo-title span {
+    display: block;
+    font-weight: 600;
+    font-size: 2em;
+    color: #fff;
+    letter-spacing: 0;
+    margin-top: 10px;
+    text-shadow: 4px 1px 14px #000;
+}
+
+h3.pos-title {
+    text-align: center;
+    padding: 1.5em 0;
+    text-transform: capitalize;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+
+h3.pos-title span {
+    color: #168eea;
+}
+
+p.demo-ibg-txt {
+    display: inline;
+    padding-left: 1em;
+    text-transform: capitalize;
+    font-size: 2em;
+    color: #000000;
+}
+
+/* //inner bg */
+
+/* //inner bg */
+
+.demo-header {
+    background: #eee;
+    padding: 4px 0 15px;
+}
+
+ul.inner_breadcrumb {
+    list-style: none;
+    display: inline-block;
+    padding: 15px 15px 0;
+    list-style: none;
+    background: #eee;
+}
+
+ul.inner_breadcrumb li {
+    display: inline-block;
+    color: #000;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+ul.inner_breadcrumb li span {
+    margin: 0 1em;
+}
+
+.inner_breadcrumb li.active a {
+    color: #ff3546;
+}
+
+/*-- blog --*/
+
+.blog-img {
+    padding: 0;
+}
+
+.blog-img img,
+.blog-side.blog-top-right img {
+    width: 100%;
+}
+
+ul.blog_list_agile_w3ls {
+    margin-bottom: 1.5em;
+}
+
+.blog-bottom {
+    background: #eb5273;
+    padding: 2em;
+    min-height: 330px;
+}
+
+.blog_info h4 {
+    font-size: 1em;
+    color: #03cce6;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.blog_info h5 a {
+    font-size: 1em;
+    color: #2c2d2d;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.blog_info p a.user-blog {
+    color: #03cce6;
+    text-transform: capitalize;
+    font-size: 1em;
+}
+
+ul.blog_list_agile_w3ls li {
+    display: inline-block;
+    color: #212121;
+    font-size: 0.9em;
+}
+
+ul.blog_list_agile_w3ls li span {
+    color: #adaeaf;
+    padding-right: 8px;
+}
+ul.blog_list_agile_w3ls li span:hover{
+    color: #03cce6;
+}
+ul.blog_list_agile_w3ls li i {
+    padding: 0 1em;
+    font-style: normal;
+    color: #999;
+}
+
+ul.blog_list_agile_w3ls li a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.blog_info h5 {
+    margin: 12px 0 15px;
+}
+
+.blog_info {
+    min-height: 334px;
+    padding: 2em;
+    border: 3px solid #f5f5f5;
+    background-color: #f5f5f5;
+}
+
+.blog-side.blog-top-right {
+    padding-right: 0;
+}
+
+.blog_info.blog-right {
+    min-height: 367px;
+    margin-bottom: 2em;
+}
+
+.blog-x.br-mar {
+    margin-top: 1em;
+}
+
+.blog_info.blog-right {
+    min-height: 433px;
+    margin-bottom: 1em;
+}
+
+.blog-side.blog-top-right.two {
+    padding-left: 0;
+    min-height: 447px;
+    padding-right: 15px;
+}
+
+.blog_info.blog-right.two {
+    min-height: 430px;
+}
+
+.single-left1.blog_info {
+    margin: 0;
+}
+
+.blog_info p {
+    margin: 0 0 1em 0;
+    color: #777;
+}
+
+ul.blog_list_agile_w3ls li a {
+    font-weight: 400;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    color: #515252;
+}
+
+ul.blog_list_agile_w3ls li a:hover {
+    color: #2c2d2d;
+}
+
+ul.pagination li a {
+    color: #555;
+}
+
+ul.pagination {
+    margin-top: 2em;
+}
+
+/*-single-*/
+
+.single-gd-wthree-agileits {
+    padding: 2em 2em;
+    border: 3px solid #f5f5f5;
+    background-color: #f5f5f5;
+    margin-bottom: 1em;
+}
+
+.single-gd-wthree-agileits h4 {
+    font-size: 1.2em;
+    color: #0e0f10;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h5.mt-0 {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.progress {
+    font-size: 0.75em;
+    line-height: 8em;
+    text-align: center;
+    background-color: #d6d9da;
+    border-radius: 0.25rem;
+    margin-bottom: 1em;
+}
+
+.card-body {
+    padding: 12px;
+}
+
+.card-header {
+    padding: 0;
+    color: #0e0f10;
+}
+
+.card-header button.btn.btn-link {
+    color: #03cce6;
+    font-weight: 600;
+}
+
+.single-gd-wthree-agileits form input {
+    width: 100%;
+}
+
+.single-gd-wthree-agileits img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.comment-top input[type="text"],
+.comment-top input[type="email"],
+.comment-top textarea {
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #e2e2e2;
+    padding: 0.7em 1em;
+    font-size: 0.9em;
+    color: #e2e2e2;
+    margin: 0 0 0.7em;
+    letter-spacing: 2px;
+}
+
+.comment-top input[type="submit"] {
+    width: 30%;
+    font-size: 1.1em;
+    background: #080808;
+    padding: 0.7em 1em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    cursor: pointer;
+}
+
+.comment-top input[type="submit"]:hover {
+    background: #03cce6;
+}
+
+.single-gd-wthree-agileits form input[type="email"] {
+    outline: none;
+    padding: 12px 15px;
+    font-size: 13px;
+    color: #777;
+    background: #ffffff;
+    letter-spacing: 2px;
+    border: none;
+    border: 1px solid #ddd;
+    margin: 0;
+    border-radius: 0;
+}
+
+.single-gd-wthree-agileits form input[type="submit"] {
+    background: #03cce6;
+    padding: .8em 1em;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: 1em;
+}
+
+.single-gd-wthree-agileits form input[type="submit"]:hover {
+    background: #080808;
+}
+
+.media-body p {
+    color: #777;
+    font-size: 0.875em;
+    line-height: 1.9em;
+    margin-bottom: 3em;
+}
+
+.comment h3,
+.comment-top h4 {
+    color: #03cce6;
+    font-size: 1.4em;
+    text-align: left;
+    padding: 0 0 0.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    margin-bottom: 1em;
+}
+
+.media img {
+    margin-right: 15px;
+}
+
+.comment-top {
+    margin-top: 2em;
+}
+
+.blog-grid-right {
+    float: left;
+    width: 60%;
+    margin-left: 0.5em;
+}
+
+.blog-grid-left {
+    float: left;
+    width: 36%;
+}
+
+.blog-grid-right h5 {
+    font-size: 0.95em;
+    line-height: 1.4em;
+    font-weight: 600;
+}
+
+.blog-grid-right h5 a {
+    color: #444;
+}
+
+.tech-btm img {
+    background: #fff;
+    padding: 6px;
+}
+
+/* //blog responsive code */
+
+@media screen and (max-width: 1680px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width:1366px) {}
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (max-width: 1080px) {
+    .blog_info p {
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+    }
+    .blog_info {
+        min-height: 275px;
+        padding: 1em 2em;
+    }
+    .blog_info.blog-right {
+        min-height: 305px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .blog_info.blog-right {
+        min-height: 297px;
+    }
+    .blog-x.br-mar {
+        margin-top: 1.2em;
+    }
+    .blog_info.blog-right {
+        min-height: 370px;
+    }
+    .blog_info.blog-right {
+		min-height: 370px;
+		width: 100%;
+	}
+	.blog_info.blog-right.two {
+		min-height: 369px;
+    }
+    .single-gd-wthree-agileits h4 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blog_info.blog-right {
+		min-height: 372px;
+	}
+	.blog_info.blog-right.two {
+		min-height: 373px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+    .blog_info {
+        min-height: auto;
+        padding:2em 2em;
+    }
+    .blog_info.blog-right {
+        min-height: auto;
+    }
+    .blog-side.blog-top-right {
+        padding-right: 0;
+        margin-top: 1em;
+    }
+    .blog_info.blog-right.two {
+        min-height: auto;
+    }
+    .single-gd-wthree-agileits h4 {
+         font-size: 1em;
+    }
+    .single-left {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .row {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .blog-side.blog-top-right {
+        padding-right: 0;
+        margin-top: 1em;
+        padding: 0;
+    }
+    .blog-sp {
+        padding: 0;
+    }
+    .mt-3 {
+        margin-top: 1em !important;
+        display: block;
+    }
+    .single-left {
+        margin-top: 2em;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .blog-sp {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .comment-top input[type="submit"] {
+        width:40%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 414px) {
+    .comment-top input[type="submit"] {
+        width:45%;
+    }
+}
+
+@media screen and (max-width: 384px) {
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+/* //blog responsive code */

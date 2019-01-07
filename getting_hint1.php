@@ -1,0 +1,18 @@
+<?php 
+$name = $_GET["id"];
+include 'connection_establish.php';
+
+$sql = "SELECT t_email FROM teacher_reg WHERE t_email='$name'";
+
+$result = mysqli_query($con,$sql);
+
+
+if (mysqli_affected_rows($con)>0) {
+	echo "This email is already registered";
+}
+// else{
+// echo $name." is available";
+// }
+mysqli_close($con);
+
+?>
