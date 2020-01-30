@@ -33,7 +33,7 @@ else{
 	<?php include 'header.php';?>
 	
 <div class="container-fluid" style="background-color: #20B2AA;margin-top: -36px;color: white;" ><br>
-	<h1 style="margin-left: 20px;background-color: #20B2AA">Online Entrance Examination 2018: Result</h1><br>
+	<h1 style="margin-left: 20px;background-color: #20B2AA">Online Entrance Examination <?php echo date("Y");?>: Result</h1><br>
 	
 
 	

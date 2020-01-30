@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 03, 2018 at 08:19 AM
+-- Generation Time: May 23, 2019 at 10:16 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -57,7 +57,7 @@ CREATE TABLE `exam_date` (
 --
 
 INSERT INTO `exam_date` (`id`, `edate`) VALUES
-(1, '2018-06-30');
+(1, '2019-05-23');
 
 -- --------------------------------------------------------
 
@@ -179,33 +179,29 @@ INSERT INTO `sample` (`id`, `name`, `mark`, `mark1`) VALUES
 --
 
 CREATE TABLE `stu_reg` (
-  `sid` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
+  `id` int(11) NOT NULL,
+  `name` varchar(1100) NOT NULL,
   `address` varchar(100) NOT NULL,
-  `fatname` varchar(100) NOT NULL,
-  `dob` varchar(100) NOT NULL,
-  `phone` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `reg_date` varchar(100) NOT NULL,
-  `gender` varchar(100) NOT NULL
+  `fatname` varchar(1100) NOT NULL,
+  `dob` date NOT NULL,
+  `phone` varchar(11) NOT NULL,
+  `email` varchar(1100) NOT NULL,
+  `password` varchar(11) NOT NULL,
+  `reg_date` date NOT NULL,
+  `gender` varchar(11) NOT NULL,
+  `exam_status` varchar(1100) NOT NULL,
+  `salting_value` varchar(1100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `stu_reg`
 --
 
-INSERT INTO `stu_reg` (`sid`, `name`, `address`, `fatname`, `dob`, `phone`, `email`, `password`, `reg_date`, `gender`) VALUES
-(2, 'Safal Sigdel', 'Bardghat-3', 'Narayan Sigdel', '1995-05-03', '9811427933', 'safalsigdel381@gmail.com', 'safal', '2018-06-06', 'male'),
-(3, 'Selena gomez', 'Dallas', 'Mike', '2018-06-12', '7645234', 'selena@gmail.com', 'selena', '2018-06-05', 'female'),
-(4, 'Bishnu Pokhrel', 'Pulpari(Devinagar)', 'Krishna', '2018-06-07', '93580809', 'bishnu@gmail.com', 'bishnu', '2018-05-31', 'male'),
-(5, 'Keshab Chalise', 'Pulwari(Devinagar)', 'Hari', '2018-06-07', '9811427933', 'keshab@gmail.com', 'keshab', '2018-06-07', 'male'),
-(6, 'Shishir Kunwar', 'Jaykuti-Btl', 'Ram', '1994-7-9', '9872378245', 'shishir@gmail.com', 'shishir', '2018-6-30', 'male'),
-(7, 'Yadav Aryal', 'Chandrauta', 'Hari', '1992-8-23', '987342544', 'yadav@gmail.com', 'yadav', '2018-6-30', 'male'),
-(8, 'Yog Sharma', 'Khaireni', 'Baba', '1993-9-7', '985243562', 'yog@gmail.com', 'yog', '2018-6-30', ''),
-(9, 'Sujeet Shrestha', 'Devinagar', 'Shyam', '1992-8-23', '98734254', 'sujeet@gmail.com', 'sujeet', '2018-6-30', 'male'),
-(10, 'Lionel Messi', 'Barcelona', 'R Messi', '1938', '48586857', 'messi@gmail.com', 'messi', '2018-4-35', 'male'),
-(11, 'Kristen Stewart', 'California', 'Harry', '1996-3-5', '83425543', 'kristen@gmail.com', 'kristen', '2018-2-29', 'female');
+INSERT INTO `stu_reg` (`id`, `name`, `address`, `fatname`, `dob`, `phone`, `email`, `password`, `reg_date`, `gender`, `exam_status`, `salting_value`) VALUES
+(0, 'Roary Craig', 'Error reiciendis ea ', 'Ezekiel Conley', '1982-05-27', '+1 (448) 22', 'gesijaso@ma', '1be7d287c3d', '2019-05-23', 'male', 'not taken', 'djf*iwirÂ£jg54313kjg@g!jkg&gj'),
+(0, 'Hiroko Hill', 'Molestiae totam duci', 'Yasir Bartlett', '2008-07-12', '+1 (103) 28', 'ziwed@maili', '39268ad4611', '2019-05-23', 'male', 'not taken', 'djf*iwirÂ£jg13811kjg@g!jkg&gj'),
+(0, 'bishnu pokhrel', 'butwal', 'bhim', '1990-12-12', '9811990067', 'bishnu@gmai', 'ff88bf54ca6', '2019-05-23', 'male', 'not taken', 'djf*iwirÂ£jg30757kjg@g!jkg&gj'),
+(0, 'bishnu', 'bishnu', 'bishnu', '1999-12-12', '9811990067', 'bishnup212@', 'bishnu', '2019-05-23', 'male', 'not taken', 'djf*iwirÂ£jg30809kjg@g!jkg&gj');
 
 -- --------------------------------------------------------
 
@@ -296,12 +292,6 @@ ALTER TABLE `sample`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `stu_reg`
---
-ALTER TABLE `stu_reg`
-  ADD PRIMARY KEY (`sid`);
-
---
 -- Indexes for table `teacher_reg`
 --
 ALTER TABLE `teacher_reg`
@@ -342,17 +332,12 @@ ALTER TABLE `rdate`
 -- AUTO_INCREMENT for table `result`
 --
 ALTER TABLE `result`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `sample`
 --
 ALTER TABLE `sample`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `stu_reg`
---
-ALTER TABLE `stu_reg`
-  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `teacher_reg`
 --

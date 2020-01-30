@@ -14,6 +14,7 @@ $password = $_POST["password"];
 $category = $_POST["category"];
 
 
+
 include 'connection_establish.php';
 
 $sqly = "SELECT * FROM exam_date";
@@ -21,9 +22,12 @@ $resulty = mysqli_query($con,$sqly);
 $rowy = mysqli_fetch_array($resulty);
 $datey = date("Y-m-d");
 
+
 $status = "SELECT exam_status FROM stu_reg WHERE email='$email' ";
 $st= mysqli_query($con,$status);
 $sta = mysqli_fetch_array($st);
+
+
 
 if($category=="student" ){
 
@@ -37,18 +41,17 @@ if($category=="student" ){
 		exit();
 	}
 
-$scon = mysqli_connect("localhost","root","","oee");
+$scon = mysqli_connect("localhost","root","ncs","oee");
 
-$salt_sql = "SELECT salting_value FROM stu_reg WHERE email='$email' ";
-$salt_query= mysqli_query($scon,$salt_sql);
-$salt_fetch = mysqli_fetch_array($salt_query);
-
-$salting_value = $salt_fetch['salting_value'];
-$salted_password = sha1($salting_value.$password);
-
-$sql = "SELECT email,password FROM stu_reg WHERE email='$email' && password ='$salted_password'";
+$sql = "SELECT email,password FROM stu_reg WHERE email='$email' AND password='$password'";
 $check =  mysqli_query($scon,$sql);
+
+
 $row = mysqli_fetch_array($check);
+
+
+$tot=mysqli_affected_rows($scon);
+ 
 
 if (mysqli_affected_rows($scon)>0) {
 
@@ -59,7 +62,7 @@ if (mysqli_affected_rows($scon)>0) {
 		('$email','0','0','0','0','not taken')");
 		
 
-	echo "<script>swal('You are logged in', '', 'success')
+	echo "<script>swal('Email and password matched !!!', 'Now you can give exam', 'success')
 	.then((value) => {
   window.location='exam2.php';
 });
@@ -86,16 +89,7 @@ if (mysqli_affected_rows($scon)>0) {
 if ($category=="teacher"){
 
 	$tcon = mysqli_connect("localhost","root","","oee");
-
-	$salt_tsql = "SELECT * FROM teacher_reg WHERE t_email='$email'";
- 	$salt_tquery= mysqli_query($tcon,$salt_tsql);
-	$salt_tfetch = mysqli_fetch_array($salt_tquery);
-
-
-	$salting_value = $salt_tfetch['salting_value'];
-	$salted_password = sha1($salting_value.$password);
-
-	$sql= "SELECT t_email,t_password FROM teacher_reg WHERE t_email='$email' && t_password ='$salted_password'";
+	$sql = "SELECT t_email,t_password FROM teacher_reg WHERE t_email='$email' && t_password ='$password'";
  	mysqli_query($tcon,$sql);
 
 
@@ -107,9 +101,8 @@ if ($category=="teacher"){
 });
 
 </script>";
-}
 
-else {
+ 	} else {
  		
       session_start();
 	$_SESSION["temail"] = $email;

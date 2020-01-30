@@ -156,13 +156,13 @@
 								<h3>Safal Sigdel
 								</h3>
 								<i>Nepal</i>
-								<p>Frontend and Backend Developer Developer
+								<p>Frontend and Backend Developer </p> 
 							</div>
 						</li>
 						<li>
 							<div class="testimonials_grid">
 								<div class="testimonials_grid-inn">
-									<img src="images/20nu.jpg" width="200px" height="200px" alt=" " class="img-responsive" />
+									<img src="images/bishnu.jpg" width="200px" height="200px" alt=" " class="img-responsive" />
 									<div class="test_social_pos">
 										<ul class="social_list1">
 											<li>
@@ -194,7 +194,7 @@
 						<li>
 							<div class="testimonials_grid">
 								<div class="testimonials_grid-inn">
-									<img src="images/kesav.jpg" alt=" " width="200px" height="200px" class="img-responsive" />
+									<img src="images/keshab.jpg" alt=" " width="200px" height="200px" class="img-responsive" />
 									<div class="test_social_pos">
 										<ul class="social_list1">
 											<li>
@@ -294,7 +294,7 @@
 				</ul>
 			</div>
 			<div class="copyrightbottom" data-aos="fade-right">
-				<p>© 2018 Online Entrance. All Rights Reserved | Design by
+				<p>© <?php echo date("Y");?> Online Entrance. All Rights Reserved | Design by
 					<a href="#">Team OEE</a>
 				</p>
 

@@ -15,8 +15,7 @@ $date = date("Y-m-d");
 
 if ($date!=$row['edate']) {
   $tdate = $row['edate'];
-    echo "<html><head><script src='dist/sweetalert.min.js'></script></head></html>";
-		
+    echo "<html><head><script src='dist/sweetalert.min.js'></script></head></html>";	
     echo "<script>swal('Examination date is not fixed yet', '', 'info')
   .then((value) => {
   window.location='index.php';
@@ -28,7 +27,12 @@ if ($date!=$row['edate']) {
 }
 
 $status = "SELECT exam_status FROM stu_reg WHERE email='$cemail' ";
+
 $query = mysqli_query($con,$status);
+
+// print_r($query);
+// die();
+// $fetch=mysqli_num_row($query);
 $fetch = mysqli_fetch_array($query);
 if ($fetch['exam_status']=="taken") {
   echo "
