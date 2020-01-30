@@ -17,8 +17,7 @@ $phone = $_POST["phone"];
 $email = $_POST["email"];
 $password = $_POST["password"];
 
-print_r(htmlspecialchars($name));
-die();
+
 
 //salting technique
 $salt = "djf*iwir£jg".rand(10000,99999)."kjg@g!jkg&gj";

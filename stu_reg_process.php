@@ -18,6 +18,7 @@ $fatname = $_POST["fatname"];
 $dob = $_POST["dob"];
 
 $phone = $_POST["phone"];
+// print_r($phone);
 
 $email = $_POST["email"];
 
@@ -41,8 +42,9 @@ if (!$con) {
 
 // inserting data into database oee
 
-$sql_query = "INSERT INTO stu_reg(name,address,fatname,dob,phone,email,password,reg_date,gender,exam_status,salting_value) values($name,$address,$fatname,$dob,$phone,$email,$password,$datesasa,$gender,'not taken',$salt)";
-print_r($sql_query);
+// $sql_query = "INSERT INTO stu_reg(name,address,fatname,dob,phone,email,password,reg_date,gender,exam_status,salting_value) values($name,$address,$fatname,$dob,$phone,$email,$password,$datesasa,$gender,'not taken',$salt)";
+$sql_query = "INSERT INTO stu_reg(name,address,fatname,dob,phone,email,password,reg_date,gender,exam_status,salting_value) values('$name','$address','$fatname','$dob','$phone','$email@gmail.com','$password','$datesasa','$gender','not taken','$salt')";	
+
 $result = mysqli_query($con,$sql_query);
 
 
