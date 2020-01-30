@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.6.6deb5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 23, 2019 at 10:16 AM
--- Server version: 10.1.26-MariaDB
--- PHP Version: 7.1.8
+-- Host: localhost:3306
+-- Generation Time: Jan 30, 2020 at 03:55 PM
+-- Server version: 5.7.29-0ubuntu0.18.04.1
+-- PHP Version: 7.0.33-14+ubuntu18.04.1+deb.sury.org+1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -57,7 +55,29 @@ CREATE TABLE `exam_date` (
 --
 
 INSERT INTO `exam_date` (`id`, `edate`) VALUES
-(1, '2019-05-23');
+(1, '2020-01-30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notice`
+--
+
+CREATE TABLE `notice` (
+  `n_id` int(200) NOT NULL,
+  `n_date` varchar(200) NOT NULL,
+  `n_heading` varchar(200) DEFAULT NULL,
+  `n_text` varchar(200) DEFAULT NULL,
+  `n_description` varchar(2000) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `notice`
+--
+
+INSERT INTO `notice` (`n_id`, `n_date`, `n_heading`, `n_text`, `n_description`) VALUES
+(1, '2020-01-30 13:06:15', 'Bevis Estes', 'Dolores harum blandi', 'Autem eiusmod pariat'),
+(2, '2020-01-30 13:06:25', 'Ray Fisher', 'Sed dolore et nihil ', 'Quas rerum est null');
 
 -- --------------------------------------------------------
 
@@ -118,7 +138,7 @@ CREATE TABLE `rdate` (
 --
 
 INSERT INTO `rdate` (`id`, `rdate`) VALUES
-(1, '2018-07-03');
+(1, '2020-01-30');
 
 -- --------------------------------------------------------
 
@@ -134,22 +154,6 @@ CREATE TABLE `result` (
   `right_answer` int(11) NOT NULL,
   `wrong_answer` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `result`
---
-
-INSERT INTO `result` (`id`, `email`, `ques_attempted`, `mark_obtained`, `right_answer`, `wrong_answer`) VALUES
-(1, 'safalsigdel381@gmail.com', 20, 20, 20, 0),
-(2, 'selena@gmail.com', 18, 15.5, 16, 2),
-(3, 'keshab@gmail.com', 18, 14.25, 15, 3),
-(4, 'bishnu@gmail.com', 17, 12, 13, 4),
-(5, 'shishir@gmail.com', 12, 9.5, 10, 2),
-(6, 'yog@gmail.com', 15, 11, 11, 4),
-(7, 'sujeet@gmail.com', 13, 9, 9, 4),
-(8, 'yadav@gmail.com', 10, 8.5, 10, 2),
-(9, 'messi@gmail.com', 17, 16.75, 16, 1),
-(10, 'kristen@gmail.com', 18, 16, 16, 2);
 
 -- --------------------------------------------------------
 
@@ -184,7 +188,7 @@ CREATE TABLE `stu_reg` (
   `address` varchar(100) NOT NULL,
   `fatname` varchar(1100) NOT NULL,
   `dob` date NOT NULL,
-  `phone` varchar(11) NOT NULL,
+  `phone` varchar(110) NOT NULL,
   `email` varchar(1100) NOT NULL,
   `password` varchar(11) NOT NULL,
   `reg_date` date NOT NULL,
@@ -198,10 +202,7 @@ CREATE TABLE `stu_reg` (
 --
 
 INSERT INTO `stu_reg` (`id`, `name`, `address`, `fatname`, `dob`, `phone`, `email`, `password`, `reg_date`, `gender`, `exam_status`, `salting_value`) VALUES
-(0, 'Roary Craig', 'Error reiciendis ea ', 'Ezekiel Conley', '1982-05-27', '+1 (448) 22', 'gesijaso@ma', '1be7d287c3d', '2019-05-23', 'male', 'not taken', 'djf*iwirÂ£jg54313kjg@g!jkg&gj'),
-(0, 'Hiroko Hill', 'Molestiae totam duci', 'Yasir Bartlett', '2008-07-12', '+1 (103) 28', 'ziwed@maili', '39268ad4611', '2019-05-23', 'male', 'not taken', 'djf*iwirÂ£jg13811kjg@g!jkg&gj'),
-(0, 'bishnu pokhrel', 'butwal', 'bhim', '1990-12-12', '9811990067', 'bishnu@gmai', 'ff88bf54ca6', '2019-05-23', 'male', 'not taken', 'djf*iwirÂ£jg30757kjg@g!jkg&gj'),
-(0, 'bishnu', 'bishnu', 'bishnu', '1999-12-12', '9811990067', 'bishnup212@', 'bishnu', '2019-05-23', 'male', 'not taken', 'djf*iwirÂ£jg30809kjg@g!jkg&gj');
+(159, 'Bishnu Pokhrel', 'Qui sint mollit enim', 'Shea Newman', '2011-08-17', '+1 (811) 365-1784', 'bishnu@thulo.com', 'bishnu', '2020-01-30', 'male', 'taken', 'djf*iwirÂ£jg34262kjg@g!jkg&gj');
 
 -- --------------------------------------------------------
 
@@ -218,18 +219,10 @@ CREATE TABLE `teacher_reg` (
   `t_email` varchar(50) NOT NULL,
   `t_password` varchar(50) NOT NULL,
   `subject` varchar(50) NOT NULL,
-  `rdate` varchar(100) NOT NULL
+  `rdate` varchar(100) NOT NULL,
+  `permission` varchar(200) NOT NULL,
+  `salting_value` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `teacher_reg`
---
-
-INSERT INTO `teacher_reg` (`t_id`, `t_name`, `t_gender`, `t_address`, `t_phone`, `t_email`, `t_password`, `subject`, `rdate`) VALUES
-(1, 'Nirmal Sharma', 'male', 'Butwal', '84848484', 'nirmal@gmail.com', 'nirmal', 'chemistry', '2018-06-05'),
-(2, 'Hari Sharma', 'male', 'Butwal', '84848484', 'Harl@gmail.com', 'hari', 'english', '2018-06-05'),
-(3, 'safal sigdel', 'male', 'Bardghat-3', '9811427933', 'safalsigdel381@gmail.com', 'safal', 'physics', '2018-06-05'),
-(4, 'Narayan Sigdel', 'male', 'Butwal', '40903385', 'narayan@gmail.com', 'narayan', 'English', '2018-06-06');
 
 -- --------------------------------------------------------
 
@@ -267,6 +260,12 @@ ALTER TABLE `exam_date`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `notice`
+--
+ALTER TABLE `notice`
+  ADD PRIMARY KEY (`n_id`);
+
+--
 -- Indexes for table `question_table`
 --
 ALTER TABLE `question_table`
@@ -289,6 +288,12 @@ ALTER TABLE `result`
 -- Indexes for table `sample`
 --
 ALTER TABLE `sample`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `stu_reg`
+--
+ALTER TABLE `stu_reg`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -319,6 +324,11 @@ ALTER TABLE `admin_account`
 ALTER TABLE `exam_date`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT for table `notice`
+--
+ALTER TABLE `notice`
+  MODIFY `n_id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
 -- AUTO_INCREMENT for table `question_table`
 --
 ALTER TABLE `question_table`
@@ -339,16 +349,20 @@ ALTER TABLE `result`
 ALTER TABLE `sample`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
+-- AUTO_INCREMENT for table `stu_reg`
+--
+ALTER TABLE `stu_reg`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=160;
+--
 -- AUTO_INCREMENT for table `teacher_reg`
 --
 ALTER TABLE `teacher_reg`
-  MODIFY `t_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `t_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `test`
 --
 ALTER TABLE `test`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

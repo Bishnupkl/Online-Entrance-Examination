@@ -61,7 +61,7 @@ else{
   <div class="row">
    <div class="col-sm-2"></div>
  	 <div class="col-sm-8 col-sm-offset-3" >
-  <h1> <center><b>Online Entrance Examination <br>2018</b></center></h1>
+  <h1> <center><b>Online Entrance Examination <br><?php echo date('Y');?></b></center></h1>
   <p style="float: right"><b>Full Marks: 20 <br> Pass Marks:8 <br> Time: 45 min</b></p><br>
   <p><i>Candidates are higly restricted to bring external devices such as mobile, pendrive, <br>external disks etc and They should click on only one botton.</i></p>
   <b>Attempt all questions </b><span style="float: right;"><input type="text" id="dat" value="44" disabled style="width: 30px;color: lightseagreen;height: 20px;">
