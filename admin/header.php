@@ -36,7 +36,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion" style="background:whitesmoke;">
        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard"><!--style="border-top:1px solid #D3D2D2;"-->
-          <a class="nav-link" href="index" style="color:darkcyan;">
+          <a class="nav-link" href="index.php" style="color:darkcyan;">
             <i class="fa fa-fw fa-dashboard"></i> &nbsp; &nbsp; &nbsp;
             <span class="nav-link-text">Dashboard</span>
           </a>
