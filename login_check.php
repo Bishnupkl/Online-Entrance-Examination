@@ -113,6 +113,14 @@ if ($category=="teacher"){
 
 
 }
+else{
+		echo "<script>swal('Please Select Category', '', 'error')
+	.then((value) => {
+  window.location='login.php';
+});
+
+</script>";
+}
 
 
 
