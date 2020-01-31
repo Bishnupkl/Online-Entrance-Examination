@@ -9,8 +9,9 @@ echo "
 $email = $_SESSION["email"];
 include 'connection_establish.php';
 
-
-
+$result_student="INSERT INTO result(email,ques_attempted,mark_obtained,right_answer,wrong_answer) values('$email','0','0','0','0')";
+	$result_student12 = mysqli_query($con,$result_student);	
+if($result_student12){
 if(isset($_POST['q1']))
 {
 
@@ -22,13 +23,17 @@ $row1 = mysqli_fetch_array($result1);
 $correct1 = $row1["correct_ans"];
 $qno= $row1["q_id"];
 
+
 //question attempt
 	$asql = "SELECT ques_attempted FROM result WHERE email = '$email' ";
+
 	$aresult = mysqli_query($con,$asql);
 	$arow = mysqli_fetch_array($aresult);
 	$attempt=$arow["ques_attempted"]+1;
 
+
 	mysqli_query($con,"UPDATE result SET ques_attempted = '$attempt' WHERE email = '$email' ");
+	
 
 if ($q1==$correct1) {
 	
@@ -1419,6 +1424,7 @@ if ($prow["mark_obtained"]>=8) {
 	mysqli_query($con,"UPDATE result SET status ='Passed' WHERE email='$email'");
 } else {
 	mysqli_query($con,"UPDATE result SET status ='Failed' WHERE email='$email'");
+}
 }
 
 

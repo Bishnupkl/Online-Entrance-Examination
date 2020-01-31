@@ -17,7 +17,8 @@ $phone = $_POST["phone"];
 $email = $_POST["email"];
 $password = $_POST["password"];
 
-
+// print_r(htmlspecialchars($name));
+// die();
 
 //salting technique
 $salt = "djf*iwir£jg".rand(10000,99999)."kjg@g!jkg&gj";
@@ -28,7 +29,7 @@ $subject = $_POST["subject"];
 
 include 'connection_establish.php';
 
-$sql_query = "INSERT INTO teacher_reg(t_name,t_gender,t_address,t_phone,t_email,t_password,subject,rdate,permission,salting_value) values('$name','$gender','$address','$phone','$email','$salted_password','$subject',NOW(),'not granted','$salt')";
+$sql_query = "INSERT INTO teacher_reg(t_name,t_gender,t_address,t_phone,t_email,t_password,subject,rdate,permission,salting_value) values('$name','$gender','$address','$phone','$email','$password','$subject',NOW(),'not granted','$salted_password')";
 
 
 

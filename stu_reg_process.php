@@ -60,6 +60,9 @@ if (!$result) {
 
 }
 else{
+	// $result_student="INSERT INTO result(email,ques_attempted,mark_obtained,right_answer,wrong_answer) values('$email','0','0','0','0')";
+	// $result = mysqli_query($con,$result_student);	
+	// print_r($result);
 	session_start();
 	$_SESSION["ema"]=$email;
 	
