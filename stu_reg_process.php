@@ -31,7 +31,7 @@ $salt = "djf*iwir£jg".rand(10000,99999)."kjg@g!jkg&gj";
 $salted_password = sha1($salt.$password);
 $gender = $_POST["gender"];
 $datesasa=date("Y-m-d");
-$con = mysqli_connect("localhost","root","ncs","oee");
+$con = mysqli_connect("localhost","20nu","20nu","oee");
 
 if (!$con) {
 	die("connection could not be established".mysqli_error());

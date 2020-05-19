@@ -1,0 +1,43 @@
+[18-May-2020 11:13:06 Asia/Katmandu] PHP Notice:  Undefined index: gender in /var/www/html/oee/stu_reg_process.php on line 32
+[18-May-2020 11:13:06 Asia/Katmandu] PHP Warning:  mysqli_connect(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/html/oee/stu_reg_process.php on line 34
+[18-May-2020 11:13:06 Asia/Katmandu] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /var/www/html/oee/stu_reg_process.php on line 37
+[18-May-2020 11:13:31 Asia/Katmandu] PHP Warning:  mysqli_connect(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/html/oee/stu_reg_process.php on line 34
+[18-May-2020 11:13:31 Asia/Katmandu] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /var/www/html/oee/stu_reg_process.php on line 37
+[18-May-2020 11:14:28 Asia/Katmandu] PHP Notice:  Undefined index: category in /var/www/html/oee/login_check.php on line 14
+[18-May-2020 11:14:51 Asia/Katmandu] PHP Warning:  mysqli_connect(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/html/oee/login_check.php on line 44
+[18-May-2020 11:14:51 Asia/Katmandu] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 47
+[18-May-2020 11:14:51 Asia/Katmandu] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /var/www/html/oee/login_check.php on line 50
+[18-May-2020 11:14:51 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 53
+[18-May-2020 11:14:51 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 56
+[18-May-2020 11:14:57 Asia/Katmandu] PHP Warning:  mysqli_connect(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/html/oee/login_check.php on line 44
+[18-May-2020 11:14:57 Asia/Katmandu] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 47
+[18-May-2020 11:14:57 Asia/Katmandu] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /var/www/html/oee/login_check.php on line 50
+[18-May-2020 11:14:57 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 53
+[18-May-2020 11:14:57 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 56
+[18-May-2020 11:15:06 Asia/Katmandu] PHP Warning:  mysqli_connect(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/html/oee/login_check.php on line 44
+[18-May-2020 11:15:06 Asia/Katmandu] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 47
+[18-May-2020 11:15:06 Asia/Katmandu] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /var/www/html/oee/login_check.php on line 50
+[18-May-2020 11:15:06 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 53
+[18-May-2020 11:15:06 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 56
+[18-May-2020 16:41:43 Asia/Katmandu] PHP Warning:  mysqli_connect(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/html/oee/login_check.php on line 44
+[18-May-2020 16:41:43 Asia/Katmandu] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 47
+[18-May-2020 16:41:43 Asia/Katmandu] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /var/www/html/oee/login_check.php on line 50
+[18-May-2020 16:41:43 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 53
+[18-May-2020 16:41:43 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 56
+[19-May-2020 08:08:40 Asia/Katmandu] PHP Warning:  mysqli_connect(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/html/oee/stu_reg_process.php on line 34
+[19-May-2020 08:08:40 Asia/Katmandu] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /var/www/html/oee/stu_reg_process.php on line 37
+[19-May-2020 08:10:04 Asia/Katmandu] PHP Warning:  mysqli_connect(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/html/oee/login_check.php on line 44
+[19-May-2020 08:10:04 Asia/Katmandu] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 47
+[19-May-2020 08:10:04 Asia/Katmandu] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /var/www/html/oee/login_check.php on line 50
+[19-May-2020 08:10:04 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 53
+[19-May-2020 08:10:04 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 56
+[19-May-2020 08:10:14 Asia/Katmandu] PHP Warning:  mysqli_connect(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/html/oee/login_check.php on line 44
+[19-May-2020 08:10:14 Asia/Katmandu] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 47
+[19-May-2020 08:10:14 Asia/Katmandu] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /var/www/html/oee/login_check.php on line 50
+[19-May-2020 08:10:14 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 53
+[19-May-2020 08:10:14 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 56
+[19-May-2020 08:10:23 Asia/Katmandu] PHP Warning:  mysqli_connect(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/html/oee/login_check.php on line 44
+[19-May-2020 08:10:23 Asia/Katmandu] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 47
+[19-May-2020 08:10:23 Asia/Katmandu] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /var/www/html/oee/login_check.php on line 50
+[19-May-2020 08:10:23 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 53
+[19-May-2020 08:10:23 Asia/Katmandu] PHP Warning:  mysqli_affected_rows() expects parameter 1 to be mysqli, bool given in /var/www/html/oee/login_check.php on line 56
