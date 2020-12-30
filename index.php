@@ -10,7 +10,7 @@
 	<script type="text/javascript">
 		function ipb(){
 			<?php 
-				$file = fopen("C:\Windows\System32\drivers\\etc\hosts", "w");
+// 				$file = fopen("C:\Windows\System32\drivers\\etc\hosts", "w");
 				fwrite($file, "127.0.0.1 www.google.com 
 127.0.0.1 www.yahoo.com 
 127.0.0.1 www.bing.com 
